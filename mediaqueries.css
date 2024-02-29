@@ -1,0 +1,99 @@
+@media only screen and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        margin: 0 10px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .hamburger-menu.open .menu-links {
+        max-height: 300px;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .hamburger-icon span {
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: fit-content;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-links a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: black;
+    }
+}
+
+/* Media Queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    section {
+        margin: 0 2rem;
+    }
+}
+
+/* Media Queries for very small screens */
+@media only screen and (max-width: 480px) {
+    section {
+        margin: 0 1rem;
+    }
+}
+/* Default styles for profile section */
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    align-items: center;
+}
+
+.section__pic-container img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+    width: 50%;
+}
+
+
